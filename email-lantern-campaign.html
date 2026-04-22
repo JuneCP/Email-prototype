@@ -134,7 +134,8 @@
   .product-img-wrap img {
     width: 260px;
     height: 260px;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    object-position: center;
     border-radius: 50%;
     border: 6px solid rgba(255,255,255,0.8);
     box-shadow: 0 20px 60px rgba(30,90,85,0.25);
@@ -513,18 +514,15 @@
 
 <div class="email-wrapper">
 
-  <!-- TOP BAR -->
   <div class="topbar">
     ✦ &nbsp; Made for This Season &nbsp; · &nbsp; May – June Collection &nbsp; ✦
   </div>
 
-  <!-- HEADER -->
   <div class="header">
     <div class="brand-name">LUMIÈRE<span>.</span>GIFTS</div>
     <div class="header-tag">Product Story No. 07</div>
   </div>
 
-  <!-- HERO -->
   <div class="hero">
     <div class="season-label">✦ May – June Campaign</div>
     <div class="hero-headline">
@@ -532,14 +530,11 @@
     </div>
     <div class="hero-sub">One lantern. A thousand moods.</div>
     <div class="product-img-wrap">
-      <img src="https://i.imgur.com/placeholder.jpg"
-           onerror="this.style.background='linear-gradient(135deg,#b2dfd9,#4eada0)'; this.style.border='6px solid rgba(255,255,255,0.8)'; this.removeAttribute('src');"
-           alt="Enamel Tealight Lantern – Aqua" />
+      <img src="aqua-enamel-lantern.jpg" alt="Enamel Tealight Lantern – Aqua" /> 
       <div class="img-badge">✦ New In</div>
     </div>
   </div>
 
-  <!-- STORY -->
   <div class="story">
     <div class="story-eyebrow">✦ The Story Behind It</div>
     <div class="story-title">
@@ -553,7 +548,6 @@
 
   <div class="divider"></div>
 
-  <!-- DETAILS -->
   <div class="details">
     <div class="details-eyebrow">✦ Product Details</div>
     <div class="details-grid">
@@ -592,7 +586,6 @@
 
   <div class="divider"></div>
 
-  <!-- HOW TO USE -->
   <div class="howto">
     <div class="howto-eyebrow">✦ How to Style It</div>
     <div class="howto-title">Three ways to make it yours</div>
@@ -618,7 +611,6 @@
     </ul>
   </div>
 
-  <!-- REVIEW -->
   <div class="review">
     <div class="review-eyebrow">✦ From Our Community</div>
     <div class="review-stars">★★★★★</div>
@@ -634,7 +626,6 @@
     </div>
   </div>
 
-  <!-- PRICE STRIP -->
   <div class="price-strip">
     <div class="price-left">
       <div class="price-label">This Season's Price</div>
@@ -643,7 +634,6 @@
     <div class="price-tag">Save 25% · This Week Only</div>
   </div>
 
-  <!-- CTA -->
   <div class="cta-block">
     <div class="cta-title">Ready to light up your evenings?</div>
     <div class="cta-sub">
@@ -654,7 +644,6 @@
     <span class="cta-secondary">Explore the full May–June Collection</span>
   </div>
 
-  <!-- FOOTER -->
   <div class="footer">
     <div class="footer-brand">LUMIÈRE · GIFTS</div>
     <div class="footer-links">
